@@ -1,0 +1,163 @@
+/*
+Theme Name: Webku
+Author: Alfara
+Version: 1.0
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+a:link,
+a:visited{
+    color: #006ec3;
+}
+
+p{
+    line-height: 1.65em;
+}
+/* 
+General Layout */
+div.container{
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.site-header{
+    border-bottom: 2px solid #999;
+}
+.site-footer{
+    border-top: 2px solid #999;
+    margin-top: 30px;
+}
+article.post{
+    border-bottom: 2px dotted #bbbbbb;
+}
+article.post:last-of-type{
+    border-bottom: none;
+}
+
+/* navigasi menu */
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.site-nav ul:before, .site-nav ul:after{
+    content: "";
+    display: table;
+}
+.site-nav ul:after{
+    clear: both;
+}
+.site-nav ul{
+    *zoom: 1;
+}
+.site-nav ul li{
+    list-style: none;
+    float: left;
+}
+
+/* site header menu */
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    text-decoration: none;
+}
+
+.site-header nav ul li{
+    margin-right: 5px;
+}
+.site-header nav ul li a:hover{
+    background-color: #ececec;
+}
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited{
+    background-color: #006ec3;
+    color: white;
+}
+
+/*footer menu */
+.site-footer nav ul li{
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right:1px dotted #bbb;
+}
+article.page h2{
+    font-size: 300%;
+}
+/* page-specific */
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+div.title-column{
+    width: 30%;
+    float: left;
+}
+div.text-column{
+    width: 70%;
+    float: right;
+}
+
+/* style info box */
+div.info-box{
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding: 20px;
+    background-color: #eee;
+}
+div.info-box h4{
+    margin-bottom: 6px;
+}
+div.info-box p{
+    font-size: 85%;
+}
+
+/* Children links */
+.children-links a:link,
+.children-links a:visited{
+    text-decoration: none;
+}
+.children-links{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 80%;
+}
+.children-links ul{
+    float: left;
+}
+.children-links li{
+    margin-right: 20px;
+}
+.children-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    font-size: 120%;
+    font-weight: bold;
+}
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited{
+    color: #333;
+}
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited{
+    border-right: 1px solid #ddd;
+    color: #333;
+    cursor: default;
+}
